@@ -16,7 +16,7 @@ namespace Preston.Media
         private const string MESSAGEBOX_TITLE = "Metadata Backup";
 
         private string backupFileName;
-        private System.ComponentModel.BackgroundWorker backgroundWorker;
+        private BackgroundWorker backgroundWorker;
         private int filesWorked = 0;
         private AbstractJob currentJob = null;
         private MediaAttributeCollection attributeList;
@@ -28,27 +28,21 @@ namespace Preston.Media
         {
             Font = SystemFonts.MessageBoxFont;
             InitializeComponent();
-            InitializeBackgoundWorker();
+            InitializeBackgroundWorker();
             attributeList = Properties.Settings.Default.LastAttributeList;
             Icon = Properties.Resources.MainIcon;
         }
 
-        // Set up the BackgroundWorker object by 
-        // attaching event handlers. 
-        private void InitializeBackgoundWorker()
+        // Set up the BackgroundWorker object by attaching event handlers. 
+        private void InitializeBackgroundWorker()
         {
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.WorkerReportsProgress = true;
             backgroundWorker.WorkerSupportsCancellation = true;
 
-            backgroundWorker.DoWork +=
-                new DoWorkEventHandler(backgroundWorker1_DoWork);
-            backgroundWorker.RunWorkerCompleted +=
-                new RunWorkerCompletedEventHandler(
-            backgroundWorker1_RunWorkerCompleted);
-            backgroundWorker.ProgressChanged +=
-                new ProgressChangedEventHandler(
-            backgroundWorker1_ProgressChanged);
+            backgroundWorker.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
+            backgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backgroundWorker1_RunWorkerCompleted);
+            backgroundWorker.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
         }
 
         private void InitializeWork()
@@ -65,14 +59,14 @@ namespace Preston.Media
         {
             string lastFolder = Properties.Settings.Default.LibrarySourcePath;
 
-            if (!System.IO.Directory.Exists(lastFolder))
+            if (!Directory.Exists(lastFolder))
             {
                 lastFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
-                if (!System.IO.Directory.Exists(lastFolder))
+                if (!Directory.Exists(lastFolder))
                 {
                     lastFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 }
-                if (!System.IO.Directory.Exists(lastFolder))
+                if (!Directory.Exists(lastFolder))
                 {
                     lastFolder = Application.ExecutablePath;
                 }
@@ -231,8 +225,7 @@ namespace Preston.Media
                 (currentJob is BackupJob) ? "backed up" : "restored");
         }
 
-        private void btnCancel_Click(System.Object sender,
-            System.EventArgs e)
+        private void btnCancel_Click(Object sender, EventArgs e)
         {
             DialogResult confirmResult =
                 MessageBox.Show(String.Format(
@@ -395,8 +388,7 @@ namespace Preston.Media
             }
         }
 
-        // This event handler deals with the results of the
-        // background operation.
+        // This event handler deals with the results of the background operation.
         private void backgroundWorker1_RunWorkerCompleted(
             object sender, RunWorkerCompletedEventArgs e)
         {
@@ -412,12 +404,9 @@ namespace Preston.Media
             }
             else if (e.Cancelled)
             {
-                // Next, handle the case where the user canceled 
-                // the operation.
-                // Note that due to a race condition in 
-                // the DoWork event handler, the Cancelled
-                // flag may not have been set, even though
-                // CancelAsync was called.
+                // Next, handle the case where the user canceled the operation.
+                // Note that due to a race condition in the DoWork event handler, the Cancelled
+                // flag may not have been set, even though CancelAsync was called.
                 resultLabel.Text = "Canceled";
                 progressBar.Value = 0;
             }
@@ -432,8 +421,7 @@ namespace Preston.Media
             btnCancel.Enabled = false;
         }
 
-        private void BackupMetadata(BackupJob job, BackgroundWorker worker, 
-            DoWorkEventArgs e, ref int filesWorked)
+        private void BackupMetadata(BackupJob job, BackgroundWorker worker, DoWorkEventArgs e, ref int filesWorked)
         {
             foreach (string file in job.Files)
             {
@@ -527,14 +515,14 @@ namespace Preston.Media
         {
             string lastFolder = Properties.Settings.Default.BackupFilePath;
 
-            if (!System.IO.Directory.Exists(lastFolder))
+            if (!Directory.Exists(lastFolder))
             {
                 lastFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
-                if (!System.IO.Directory.Exists(lastFolder))
+                if (!Directory.Exists(lastFolder))
                 {
                     lastFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 }
-                if (!System.IO.Directory.Exists(lastFolder))
+                if (!Directory.Exists(lastFolder))
                 {
                     lastFolder = Application.ExecutablePath;
                 }
@@ -554,7 +542,7 @@ namespace Preston.Media
         private void ValidateBackupJob()
         {
             bool pathsAreValid = 
-                (Directory.Exists(System.IO.Path.GetDirectoryName(lblDatabaseFileLocation.Text))
+                (Directory.Exists(Path.GetDirectoryName(lblDatabaseFileLocation.Text))
                 && Directory.Exists(lblSourceFolder.Text));
 
             this.btnBackup.Enabled = this.btnRestore.Enabled = pathsAreValid;
@@ -574,17 +562,15 @@ namespace Preston.Media
                 Properties.Settings.Default.Save();
             }
 
-            this.lblSourceFolder.Text = folderBrowserDialog.SelectedPath = 
-                Properties.Settings.Default.LibrarySourcePath;
-            this.lblDatabaseFileLocation.Text =  
-                Properties.Settings.Default.BackupFilePath;
-            string defaultFilePath = 
-                (string)Properties.Settings.Default.Properties["BackupFilePath"].DefaultValue;
+            this.lblSourceFolder.Text = folderBrowserDialog.SelectedPath = Properties.Settings.Default.LibrarySourcePath;
+            this.lblDatabaseFileLocation.Text = Properties.Settings.Default.BackupFilePath;
+            string defaultFilePath = (string)Properties.Settings.Default.Properties["BackupFilePath"].DefaultValue;
+
             if (!lblDatabaseFileLocation.Text.Equals(defaultFilePath))
                 this.openFileDialog.FileName = Properties.Settings.Default.BackupFilePath;
+            
             this.chkRecursive.Checked = Properties.Settings.Default.IncludeSubfolders;
-            this.openFileDialog.InitialDirectory = 
-                Path.GetDirectoryName(lblDatabaseFileLocation.Text);
+            this.openFileDialog.InitialDirectory = Path.GetDirectoryName(lblDatabaseFileLocation.Text);
 
             ValidateBackupJob();
         }
@@ -612,11 +598,10 @@ namespace Preston.Media
         // based on StackBasedIteration source at http://msdn.microsoft.com/en-us/library/bb513869.aspx
         private void RetrieveFilesInTree(string root, bool recursive, IList<string> fileList)
         {
-            // Data structure to hold names of subfolders to be
-            // examined for files.
+            // Data structure to hold names of subfolders to be examined for files.
             Stack<string> dirs = new Stack<string>(20);
 
-            if (!System.IO.Directory.Exists(root))
+            if (!Directory.Exists(root))
             {
                 throw new ArgumentException();
             }
@@ -633,7 +618,7 @@ namespace Preston.Media
                 {
                     try
                     {
-                        subDirs = System.IO.Directory.GetDirectories(currentDir);
+                        subDirs = Directory.GetDirectories(currentDir);
                     }
                     // An UnauthorizedAccessException exception will be thrown if we do not have
                     // discovery permission on a folder or file. It may or may not be acceptable 

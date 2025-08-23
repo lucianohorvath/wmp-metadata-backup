@@ -69,7 +69,7 @@ namespace Preston.Media
             this.panel1.Controls.Add(this.listView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 128);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(880, 485);
             this.panel1.TabIndex = 3;
@@ -77,7 +77,7 @@ namespace Preston.Media
             // btnSaveList
             // 
             this.btnSaveList.Location = new System.Drawing.Point(714, 23);
-            this.btnSaveList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSaveList.Margin = new System.Windows.Forms.Padding(6);
             this.btnSaveList.Name = "btnSaveList";
             this.btnSaveList.Size = new System.Drawing.Size(150, 44);
             this.btnSaveList.TabIndex = 6;
@@ -88,7 +88,7 @@ namespace Preston.Media
             // btnLoadList
             // 
             this.btnLoadList.Location = new System.Drawing.Point(714, 79);
-            this.btnLoadList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLoadList.Margin = new System.Windows.Forms.Padding(6);
             this.btnLoadList.Name = "btnLoadList";
             this.btnLoadList.Size = new System.Drawing.Size(150, 44);
             this.btnLoadList.TabIndex = 5;
@@ -98,7 +98,7 @@ namespace Preston.Media
             // btnOK
             // 
             this.btnOK.Location = new System.Drawing.Point(714, 417);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(150, 44);
             this.btnOK.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace Preston.Media
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(714, 362);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(150, 44);
             this.btnCancel.TabIndex = 3;
@@ -120,9 +120,9 @@ namespace Preston.Media
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(710, 194);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 44);
+            this.button2.Size = new System.Drawing.Size(98, 44);
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -130,9 +130,9 @@ namespace Preston.Media
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(710, 250);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 44);
+            this.button1.Size = new System.Drawing.Size(98, 44);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@ namespace Preston.Media
             this.listView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listView1.Margin = new System.Windows.Forms.Padding(6);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(694, 485);
             this.listView1.TabIndex = 0;
@@ -152,13 +152,12 @@ namespace Preston.Media
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listOptionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(880, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(880, 40);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -170,7 +169,7 @@ namespace Preston.Media
             this.readOnlyAttributesToolStripMenuItem,
             this.readWriteAttributesToolStripMenuItem});
             this.listOptionsToolStripMenuItem.Name = "listOptionsToolStripMenuItem";
-            this.listOptionsToolStripMenuItem.Size = new System.Drawing.Size(161, 40);
+            this.listOptionsToolStripMenuItem.Size = new System.Drawing.Size(161, 36);
             this.listOptionsToolStripMenuItem.Text = "List Options";
             // 
             // defaultListToolStripMenuItem
@@ -201,10 +200,10 @@ namespace Preston.Media
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 80);
+            this.panel2.Size = new System.Drawing.Size(880, 88);
             this.panel2.TabIndex = 5;
             // 
             // AttributeListSelector
@@ -219,7 +218,7 @@ namespace Preston.Media
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AttributeListSelector";
             this.Text = "Attribute List Selector";
             this.panel1.ResumeLayout(false);

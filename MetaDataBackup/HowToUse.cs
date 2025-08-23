@@ -13,8 +13,7 @@ namespace Preston.Media
     {
 
         private const String RTF_FILENAME = "MetadataBackupHelp.rtf";
-        private const String DEFAULT_RTF =
-            "The local help file was not found. More information about Metadata Backup is at {0}";
+        private const String DEFAULT_RTF = "The local help file was not found. More information about Metadata Backup is at {0}";
 
         public HowToUse()
         {
@@ -31,13 +30,12 @@ namespace Preston.Media
             {
                 try
                 {
-                    FileStream fs = File.Open(rtfPath, FileMode.Open,
-                        FileAccess.Read);
+                    FileStream fs = File.Open(rtfPath, FileMode.Open, FileAccess.Read);
 
                     byte[] bytes = new byte[fs.Length];
 
                     fs.Read(bytes, 0, bytes.Length);
-                    Encoding enc = System.Text.ASCIIEncoding.UTF8;
+                    Encoding enc = Encoding.UTF8;
 
                     this.richTextBox1.Rtf = enc.GetString(bytes);
 
@@ -45,8 +43,7 @@ namespace Preston.Media
                 }
                 catch {}
             }
-            this.richTextBox1.Text = String.Format(DEFAULT_RTF,
-                Properties.Resources.WebsiteURL);
+            this.richTextBox1.Text = String.Format(DEFAULT_RTF, Properties.Resources.WebsiteURL);
 
         }
 
@@ -55,5 +52,9 @@ namespace Preston.Media
             System.Diagnostics.Process.Start(e.LinkText);
         }
 
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
