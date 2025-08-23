@@ -129,11 +129,11 @@ namespace Preston.Media
             // 
             this.labelCompanyName.AutoSize = true;
             this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCompanyName.Location = new System.Drawing.Point(110, 57);
+            this.labelCompanyName.Location = new System.Drawing.Point(109, 57);
             this.labelCompanyName.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 17);
             this.labelCompanyName.Name = "labelCompanyName";
-            this.labelCompanyName.Size = new System.Drawing.Size(304, 17);
+            this.labelCompanyName.Size = new System.Drawing.Size(305, 17);
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "Company Name";
             this.labelCompanyName.UseMnemonic = false;
@@ -166,10 +166,10 @@ namespace Preston.Media
             // 
             this.lnkWebsite.AutoSize = true;
             this.lnkWebsite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lnkWebsite.Location = new System.Drawing.Point(110, 76);
+            this.lnkWebsite.Location = new System.Drawing.Point(109, 76);
             this.lnkWebsite.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.lnkWebsite.Name = "lnkWebsite";
-            this.lnkWebsite.Size = new System.Drawing.Size(304, 20);
+            this.lnkWebsite.Size = new System.Drawing.Size(305, 20);
             this.lnkWebsite.TabIndex = 0;
             this.lnkWebsite.TabStop = true;
             this.lnkWebsite.Text = "http://";
@@ -183,7 +183,7 @@ namespace Preston.Media
             this.label1.Location = new System.Drawing.Point(60, 76);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 0, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 14);
+            this.label1.Size = new System.Drawing.Size(49, 14);
             this.label1.TabIndex = 26;
             this.label1.Text = "Website:";
             // 
@@ -195,7 +195,7 @@ namespace Preston.Media
             this.label2.Location = new System.Drawing.Point(60, 57);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 0, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 27;
             this.label2.Text = "Authors:";
             // 

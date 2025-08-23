@@ -151,7 +151,7 @@ namespace Preston.Media
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(542, 24);
+            this.menuStrip.Size = new System.Drawing.Size(548, 24);
             this.menuStrip.TabIndex = 24;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -167,7 +167,7 @@ namespace Preston.Media
             // tsmiChooseAttributesToBackup
             // 
             this.tsmiChooseAttributesToBackup.Name = "tsmiChooseAttributesToBackup";
-            this.tsmiChooseAttributesToBackup.Size = new System.Drawing.Size(233, 22);
+            this.tsmiChooseAttributesToBackup.Size = new System.Drawing.Size(225, 22);
             this.tsmiChooseAttributesToBackup.Text = "Choose Attributes to Backup";
             this.tsmiChooseAttributesToBackup.Click += new System.EventHandler(this.tsmiChooseAttributesToBackup_Click);
             // 
@@ -183,14 +183,14 @@ namespace Preston.Media
             // howToUseMetadataBackupToolStripMenuItem
             // 
             this.howToUseMetadataBackupToolStripMenuItem.Name = "howToUseMetadataBackupToolStripMenuItem";
-            this.howToUseMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.howToUseMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.howToUseMetadataBackupToolStripMenuItem.Text = "&How to use Metadata Backup";
             this.howToUseMetadataBackupToolStripMenuItem.Click += new System.EventHandler(this.howToUseMetadataBackupToolStripMenuItem_Click);
             // 
             // aboutMetadataBackupToolStripMenuItem
             // 
             this.aboutMetadataBackupToolStripMenuItem.Name = "aboutMetadataBackupToolStripMenuItem";
-            this.aboutMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.aboutMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.aboutMetadataBackupToolStripMenuItem.Text = "&About Metadata Backup";
             this.aboutMetadataBackupToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -211,7 +211,7 @@ namespace Preston.Media
             this.chkRecursive.AutoSize = true;
             this.chkRecursive.Location = new System.Drawing.Point(24, 69);
             this.chkRecursive.Name = "chkRecursive";
-            this.chkRecursive.Size = new System.Drawing.Size(114, 17);
+            this.chkRecursive.Size = new System.Drawing.Size(112, 17);
             this.chkRecursive.TabIndex = 25;
             this.chkRecursive.Text = "Include &subfolders";
             this.chkRecursive.UseVisualStyleBackColor = true;
@@ -266,7 +266,7 @@ namespace Preston.Media
             // MetaDataBackupForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(542, 400);
+            this.ClientSize = new System.Drawing.Size(548, 408);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnRestore);

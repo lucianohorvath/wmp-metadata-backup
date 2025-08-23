@@ -261,9 +261,8 @@ namespace Preston.Media
 
             job.MediaPlayer = new MediaPlayer();
 
-            // Assign the result of the computation
-            // to the Result property of the DoWorkEventArgs
-            // object. This is will be available to the 
+            // Assign the result of the computation to the Result property of
+            // the DoWorkEventArgs object. This will be available to the 
             // RunWorkerCompleted eventhandler.
 
             if (job is BackupJob)
@@ -444,15 +443,14 @@ namespace Preston.Media
                 int percentComplete = CalculatePercentComplete(job.Files.Count, filesWorked);
                 worker.ReportProgress(percentComplete, file);
 
-                // Abort the operation if the user has canceled.
-                // Note that a call to CancelAsync may have set 
-                // CancellationPending to true just after the
-                // last invocation of this method exits, so this 
-                // code will not have the opportunity to set the 
-                // DoWorkEventArgs.Cancel flag to true. This means
-                // that RunWorkerCompletedEventArgs.Cancelled will
-                // not be set to true in your RunWorkerCompleted
-                // event handler. This is a race condition.
+                // Abort the operation if the user has canceled. Note that a
+                // call to CancelAsync may have set CancellationPending to true
+                // just after the last invocation of this method exits, so this 
+                // code will not have the opportunity to set the
+                // DoWorkEventArgs.Cancel flag to true. This means that
+                // RunWorkerCompletedEventArgs.Cancelled will not be set to
+                // true in your RunWorkerCompleted event handler. This is a
+                // race condition.
                 if (worker.CancellationPending)
                 {
                     e.Cancel = true;
