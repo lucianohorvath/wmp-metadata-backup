@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-
+- Large resolution screens support (4K), add changelog and readme, remove backup files. (#1)
+- Show attribute list window (WIP). (#1)
 
 ## April 18, 2010 – Version 1.2
 
