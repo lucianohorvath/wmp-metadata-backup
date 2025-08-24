@@ -24,6 +24,7 @@ namespace Preston.Media
             this.labelCopyright.Text = AssemblyCopyright.Replace(". ", "." + Environment.NewLine);
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
+
             labelProductName.Font = new Font(Font.Name, 12, FontStyle.Bold);
             logoPictureBox.Image = (new Icon(Properties.Resources.MainIcon, new Size(48, 48))).ToBitmap();
             lnkWebsite.Text = Properties.Resources.WebsiteURL;

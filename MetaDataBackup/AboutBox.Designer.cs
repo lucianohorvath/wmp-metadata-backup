@@ -66,11 +66,10 @@ namespace Preston.Media
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(751, 573);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(894, 609);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // logoPictureBox
@@ -79,7 +78,7 @@ namespace Preston.Media
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 7);
-            this.logoPictureBox.Size = new System.Drawing.Size(48, 567);
+            this.logoPictureBox.Size = new System.Drawing.Size(48, 603);
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
             // 
@@ -92,7 +91,7 @@ namespace Preston.Media
             this.labelProductName.Location = new System.Drawing.Point(60, 0);
             this.labelProductName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 6);
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(688, 25);
+            this.labelProductName.Size = new System.Drawing.Size(831, 25);
             this.labelProductName.TabIndex = 19;
             this.labelProductName.Text = "Product Name";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -106,7 +105,7 @@ namespace Preston.Media
             this.labelVersion.Location = new System.Drawing.Point(60, 31);
             this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 6);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(688, 25);
+            this.labelVersion.Size = new System.Drawing.Size(831, 25);
             this.labelVersion.TabIndex = 0;
             this.labelVersion.Text = "Version";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,7 +119,7 @@ namespace Preston.Media
             this.labelCopyright.Location = new System.Drawing.Point(60, 62);
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 6);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(688, 25);
+            this.labelCopyright.Size = new System.Drawing.Size(831, 25);
             this.labelCopyright.TabIndex = 21;
             this.labelCopyright.Text = "Copyright";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -131,9 +130,9 @@ namespace Preston.Media
             this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCompanyName.Location = new System.Drawing.Point(156, 93);
             this.labelCompanyName.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 17);
+            this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 25);
             this.labelCompanyName.Name = "labelCompanyName";
-            this.labelCompanyName.Size = new System.Drawing.Size(592, 17);
+            this.labelCompanyName.Size = new System.Drawing.Size(735, 25);
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "Company Name";
             this.labelCompanyName.UseMnemonic = false;
@@ -142,13 +141,13 @@ namespace Preston.Media
             // 
             this.tableLayoutPanel.SetColumnSpan(this.textBoxDescription, 2);
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDescription.Location = new System.Drawing.Point(60, 232);
+            this.textBoxDescription.Location = new System.Drawing.Point(60, 257);
             this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(688, 287);
+            this.textBoxDescription.Size = new System.Drawing.Size(831, 298);
             this.textBoxDescription.TabIndex = 1;
             this.textBoxDescription.Text = "Description";
             // 
@@ -156,7 +155,7 @@ namespace Preston.Media
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(673, 525);
+            this.okButton.Location = new System.Drawing.Point(816, 561);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 45);
             this.okButton.TabIndex = 2;
@@ -169,7 +168,7 @@ namespace Preston.Media
             this.lnkWebsite.Location = new System.Drawing.Point(156, 124);
             this.lnkWebsite.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.lnkWebsite.Name = "lnkWebsite";
-            this.lnkWebsite.Size = new System.Drawing.Size(592, 105);
+            this.lnkWebsite.Size = new System.Drawing.Size(735, 130);
             this.lnkWebsite.TabIndex = 0;
             this.lnkWebsite.TabStop = true;
             this.lnkWebsite.Text = "http://";
@@ -183,7 +182,7 @@ namespace Preston.Media
             this.label1.Location = new System.Drawing.Point(60, 124);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 0, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 99);
+            this.label1.Size = new System.Drawing.Size(96, 124);
             this.label1.TabIndex = 26;
             this.label1.Text = "Website:";
             // 
@@ -204,7 +203,7 @@ namespace Preston.Media
             this.AcceptButton = this.okButton;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.okButton;
-            this.ClientSize = new System.Drawing.Size(769, 591);
+            this.ClientSize = new System.Drawing.Size(912, 627);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
