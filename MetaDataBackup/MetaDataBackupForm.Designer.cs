@@ -67,7 +67,7 @@ namespace Preston.Media
             // btnBackup
             // 
             this.btnBackup.Enabled = false;
-            this.btnBackup.Location = new System.Drawing.Point(301, 641);
+            this.btnBackup.Location = new System.Drawing.Point(453, 835);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(140, 60);
             this.btnBackup.TabIndex = 11;
@@ -79,15 +79,15 @@ namespace Preston.Media
             // 
             this.lbResults.FormattingEnabled = true;
             this.lbResults.ItemHeight = 29;
-            this.lbResults.Location = new System.Drawing.Point(13, 67);
+            this.lbResults.Location = new System.Drawing.Point(13, 45);
             this.lbResults.Name = "lbResults";
-            this.lbResults.Size = new System.Drawing.Size(513, 62);
+            this.lbResults.Size = new System.Drawing.Size(994, 265);
             this.lbResults.TabIndex = 10;
             // 
             // btnRestore
             // 
             this.btnRestore.Enabled = false;
-            this.btnRestore.Location = new System.Drawing.Point(453, 641);
+            this.btnRestore.Location = new System.Drawing.Point(605, 835);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(140, 60);
             this.btnRestore.TabIndex = 12;
@@ -97,7 +97,7 @@ namespace Preston.Media
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(763, 641);
+            this.btnClose.Location = new System.Drawing.Point(915, 835);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(140, 60);
             this.btnClose.TabIndex = 14;
@@ -113,23 +113,23 @@ namespace Preston.Media
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.groupBox2.Location = new System.Drawing.Point(20, 374);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(612, 246);
+            this.groupBox2.Size = new System.Drawing.Size(1030, 433);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Results";
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(8, 193);
+            this.progressBar.Location = new System.Drawing.Point(12, 378);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(513, 32);
+            this.progressBar.Size = new System.Drawing.Size(991, 36);
             this.progressBar.TabIndex = 7;
             // 
             // resultLabel
             // 
             this.resultLabel.AutoSize = true;
             this.resultLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.resultLabel.Location = new System.Drawing.Point(7, 148);
+            this.resultLabel.Location = new System.Drawing.Point(11, 333);
             this.resultLabel.Name = "resultLabel";
             this.resultLabel.Size = new System.Drawing.Size(287, 29);
             this.resultLabel.TabIndex = 14;
@@ -138,7 +138,7 @@ namespace Preston.Media
             // btnCancel
             // 
             this.btnCancel.Enabled = false;
-            this.btnCancel.Location = new System.Drawing.Point(607, 641);
+            this.btnCancel.Location = new System.Drawing.Point(759, 835);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(140, 60);
             this.btnCancel.TabIndex = 13;
@@ -148,13 +148,14 @@ namespace Preston.Media
             // 
             // menuStrip
             // 
+            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(935, 42);
+            this.menuStrip.Size = new System.Drawing.Size(1078, 40);
             this.menuStrip.TabIndex = 24;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -163,13 +164,13 @@ namespace Preston.Media
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiChooseAttributesToBackup});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(119, 38);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(118, 36);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // tsmiChooseAttributesToBackup
             // 
             this.tsmiChooseAttributesToBackup.Name = "tsmiChooseAttributesToBackup";
-            this.tsmiChooseAttributesToBackup.Size = new System.Drawing.Size(453, 44);
+            this.tsmiChooseAttributesToBackup.Size = new System.Drawing.Size(451, 44);
             this.tsmiChooseAttributesToBackup.Text = "Choose Attributes to Backup";
             this.tsmiChooseAttributesToBackup.Click += new System.EventHandler(this.tsmiChooseAttributesToBackup_Click);
             // 
@@ -179,20 +180,20 @@ namespace Preston.Media
             this.howToUseMetadataBackupToolStripMenuItem,
             this.aboutMetadataBackupToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 38);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(84, 36);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // howToUseMetadataBackupToolStripMenuItem
             // 
             this.howToUseMetadataBackupToolStripMenuItem.Name = "howToUseMetadataBackupToolStripMenuItem";
-            this.howToUseMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(462, 44);
+            this.howToUseMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(460, 44);
             this.howToUseMetadataBackupToolStripMenuItem.Text = "&How to use Metadata Backup";
             this.howToUseMetadataBackupToolStripMenuItem.Click += new System.EventHandler(this.howToUseMetadataBackupToolStripMenuItem_Click);
             // 
             // aboutMetadataBackupToolStripMenuItem
             // 
             this.aboutMetadataBackupToolStripMenuItem.Name = "aboutMetadataBackupToolStripMenuItem";
-            this.aboutMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(462, 44);
+            this.aboutMetadataBackupToolStripMenuItem.Size = new System.Drawing.Size(460, 44);
             this.aboutMetadataBackupToolStripMenuItem.Text = "&About Metadata Backup";
             this.aboutMetadataBackupToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -204,7 +205,7 @@ namespace Preston.Media
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.groupBox4.Location = new System.Drawing.Point(20, 60);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(727, 147);
+            this.groupBox4.Size = new System.Drawing.Size(1007, 147);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Choose folder to backup or restore";
@@ -229,7 +230,7 @@ namespace Preston.Media
             // 
             // btnBrowseSource
             // 
-            this.btnBrowseSource.Location = new System.Drawing.Point(532, 20);
+            this.btnBrowseSource.Location = new System.Drawing.Point(802, 32);
             this.btnBrowseSource.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.btnBrowseSource.Name = "btnBrowseSource";
             this.btnBrowseSource.Size = new System.Drawing.Size(151, 52);
@@ -244,7 +245,7 @@ namespace Preston.Media
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.groupBox1.Location = new System.Drawing.Point(25, 222);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(722, 122);
+            this.groupBox1.Size = new System.Drawing.Size(1002, 122);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose metadata backup file to backup to or restore from";
@@ -259,7 +260,7 @@ namespace Preston.Media
             // 
             // btnDatabaseBrowse
             // 
-            this.btnDatabaseBrowse.Location = new System.Drawing.Point(527, 54);
+            this.btnDatabaseBrowse.Location = new System.Drawing.Point(797, 51);
             this.btnDatabaseBrowse.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.btnDatabaseBrowse.Name = "btnDatabaseBrowse";
             this.btnDatabaseBrowse.Size = new System.Drawing.Size(151, 45);
@@ -270,7 +271,7 @@ namespace Preston.Media
             // MetaDataBackupForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(935, 724);
+            this.ClientSize = new System.Drawing.Size(1078, 919);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnRestore);
