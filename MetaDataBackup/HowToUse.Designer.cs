@@ -36,19 +36,21 @@ namespace Preston.Media
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.BulletIndent = 4;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(622, 377);
+            this.richTextBox1.Size = new System.Drawing.Size(748, 477);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "The local help file was not found. More information about Metadata Backup is at h" +
-                "ttp://sourceforge.net/projects/metadatabackup";
+    "ttp://sourceforge.net/projects/metadatabackup";
             this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // HowToUse
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(622, 377);
+            this.ClientSize = new System.Drawing.Size(748, 477);
             this.Controls.Add(this.richTextBox1);
             this.Name = "HowToUse";
             this.Text = "How to use Metadata Backup";
