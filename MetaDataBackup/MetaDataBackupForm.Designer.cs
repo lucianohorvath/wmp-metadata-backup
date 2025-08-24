@@ -148,14 +148,13 @@ namespace Preston.Media
             // 
             // menuStrip
             // 
-            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(935, 48);
+            this.menuStrip.Size = new System.Drawing.Size(935, 42);
             this.menuStrip.TabIndex = 24;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -164,9 +163,8 @@ namespace Preston.Media
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiChooseAttributesToBackup});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(119, 36);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(119, 38);
             this.optionsToolStripMenuItem.Text = "Options";
-            this.optionsToolStripMenuItem.Visible = false;
             // 
             // tsmiChooseAttributesToBackup
             // 
@@ -181,7 +179,7 @@ namespace Preston.Media
             this.howToUseMetadataBackupToolStripMenuItem,
             this.aboutMetadataBackupToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 44);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 38);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // howToUseMetadataBackupToolStripMenuItem

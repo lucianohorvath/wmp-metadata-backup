@@ -22,7 +22,7 @@ namespace Preston.Media
         {
             try
             {
-                string appDataFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData);
+                string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 string copFolder = Path.Combine(appDataFolder, "Preston.Media");
                 if (!Directory.Exists(copFolder))
                 {

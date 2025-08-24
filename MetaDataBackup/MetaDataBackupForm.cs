@@ -273,8 +273,7 @@ namespace Preston.Media
                 backupJob.XmlWriter.WriteStartElement("MediaLibraryMetadataBackup");
                 try
                 {
-                    backupJob.XmlWriter.WriteAttributeString("SourcePathRoot", 
-                        job.StartingFolder);
+                    backupJob.XmlWriter.WriteAttributeString("SourcePathRoot", job.StartingFolder);
 
                     BackupMetadata(backupJob, worker, e, ref filesWorked);
                 }
@@ -323,9 +322,7 @@ namespace Preston.Media
                 if (loggingSwitch.TraceVerbose)
                     Logger.WriteLine(sourceUrl);
 
-                playlist = 
-                    job.MediaPlayer.Player.mediaCollection.getByAttribute("SourceURL",
-                        sourceUrl);
+                playlist = job.MediaPlayer.Player.mediaCollection.getByAttribute("SourceURL", sourceUrl);
 
                 if (playlist.count == 1)
                 {
@@ -584,7 +581,7 @@ namespace Preston.Media
         
         private void tsmiChooseAttributesToBackup_Click(object sender, EventArgs e)
         {
-            /*
+            // TODO: warning: all of this method was commented
             if (attributeList == null)
             {
                 attributeList = MediaAttributeCollectionFactory.CreateDefaultCollection();
@@ -592,7 +589,7 @@ namespace Preston.Media
             //MediaAttributeCollection mac = new MediaAttributeCollection();
             AttributeListSelector ec = new AttributeListSelector(attributeList);
             ec.ShowDialog();
-            */
+            
         }
 
         // based on StackBasedIteration source at http://msdn.microsoft.com/en-us/library/bb513869.aspx

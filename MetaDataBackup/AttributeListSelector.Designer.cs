@@ -34,8 +34,6 @@ namespace Preston.Media
             this.btnLoadList = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,8 +62,6 @@ namespace Preston.Media
             this.panel1.Controls.Add(this.btnLoadList);
             this.panel1.Controls.Add(this.btnOK);
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.listView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 128);
@@ -117,26 +113,6 @@ namespace Preston.Media
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(710, 194);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(710, 250);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // listView1
             // 
             this.listView1.CheckBoxes = true;
@@ -157,7 +133,7 @@ namespace Preston.Media
             this.listOptionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(880, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(880, 42);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -169,7 +145,7 @@ namespace Preston.Media
             this.readOnlyAttributesToolStripMenuItem,
             this.readWriteAttributesToolStripMenuItem});
             this.listOptionsToolStripMenuItem.Name = "listOptionsToolStripMenuItem";
-            this.listOptionsToolStripMenuItem.Size = new System.Drawing.Size(161, 36);
+            this.listOptionsToolStripMenuItem.Size = new System.Drawing.Size(161, 38);
             this.listOptionsToolStripMenuItem.Text = "List Options";
             // 
             // defaultListToolStripMenuItem
@@ -200,10 +176,10 @@ namespace Preston.Media
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Location = new System.Drawing.Point(0, 42);
             this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 88);
+            this.panel2.Size = new System.Drawing.Size(880, 86);
             this.panel2.TabIndex = 5;
             // 
             // AttributeListSelector
@@ -237,8 +213,6 @@ namespace Preston.Media
         private System.Windows.Forms.Button btnLoadList;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem listOptionsToolStripMenuItem;

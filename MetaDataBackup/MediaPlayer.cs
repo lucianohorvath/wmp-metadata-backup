@@ -121,15 +121,15 @@ namespace Preston.Media
             {
                 IWMPMedia media = playlist.get_Item(0);
                 string mediaType = media.getItemInfo("MediaType");
-                LogVerbose(String.Format("{0} found in media library - media type: {1}",
-                    fullFilePath, mediaType));
+                LogVerbose(String.Format("{0} found in media library - media type: {1}", fullFilePath, mediaType));
+
                 if (mediaType == "audio") // TODO: allow other media types
                 {
                     BackupLibraryData(playlist.get_Item(0), writer); // xDoc);
                 }
             }
             else
-                LogVerbose(String.Format("{0} NOT found in media library ({1})",
+                LogVerbose(String.Format("{0} NOT found in media library ({1})", 
                     fullFilePath, playlist.count));
             return;
         }
